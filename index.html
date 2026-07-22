@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamRoom - Persewaan Kamar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">DreamRoom</a>
+      <nav class="site-nav">
+        <a href="#home">Beranda</a>
+        <a href="#rooms">Kamar</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Hubungi</a>
+      </nav>
+      <button class="btn btn-primary" id="bookNowBtn">Pesan Sekarang</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Persewaan Kamar Nyaman</p>
+          <h1>DreamRoom - Temukan kamar ideal untuk tinggal dan bekerja.</h1>
+          <p>Dari kamar minimalis hingga suite premium, DreamRoom memberikan pengalaman sewa yang aman, nyaman, dan fleksibel.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="heroBookBtn">Lihat Kamar</button>
+            <a href="#about" class="btn btn-secondary">Tentang Kami</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Kamar DreamRoom" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature-card">
+        <h3>Fleksibel</h3>
+        <p>Pilih durasi sewa harian, mingguan, atau bulanan sesuai kebutuhan.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Aman & Nyaman</h3>
+        <p>Kamar dilengkapi fasilitas modern, keamanan, dan layanan kebersihan.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Harga Transparan</h3>
+        <p>Tidak ada biaya tersembunyi. Harga jelas dan mudah dipahami.</p>
+      </article>
+    </section>
+
+    <section class="rooms" id="rooms">
+      <div class="container section-heading">
+        <p class="eyebrow">Unit Kamar</p>
+        <h2>Pilih kamar yang paling cocok untuk Anda</h2>
+      </div>
+
+      <div class="room-filters container">
+        <button class="filter-btn active" data-type="all">Semua</button>
+        <button class="filter-btn" data-type="standard">Standard</button>
+        <button class="filter-btn" data-type="premium">Premium</button>
+        <button class="filter-btn" data-type="suite">Suite</button>
+      </div>
+
+      <div class="container room-grid" id="roomGrid">
+        <article class="room-card" data-type="standard">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Kamar Standard" />
+          <div class="room-info">
+            <h3>Kamar Standard</h3>
+            <p>Nyaman untuk satu orang dengan fasilitas dasar dan akses Wi-Fi.</p>
+            <div class="room-meta">
+              <span>Rp 250.000/malam</span>
+              <button class="btn btn-primary btn-sm book-room">Pesan</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-type="premium">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Kamar Premium" />
+          <div class="room-info">
+            <h3>Kamar Premium</h3>
+            <p>Lebih luas dengan area kerja pribadi dan pemandangan yang menyenangkan.</p>
+            <div class="room-meta">
+              <span>Rp 400.000/malam</span>
+              <button class="btn btn-primary btn-sm book-room">Pesan</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-type="suite">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Kamar Suite" />
+          <div class="room-info">
+            <h3>Suite Deluxe</h3>
+            <p>Pengalaman premium dengan kamar luas, sofa, dan dapur kecil.</p>
+            <div class="room-meta">
+              <span>Rp 650.000/malam</span>
+              <button class="btn btn-primary btn-sm book-room">Pesan</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Tentang DreamRoom</p>
+        <h2>Penginapan praktis untuk kehidupan urban modern.</h2>
+      </div>
+      <p>DreamRoom membantu penyewa mencari kamar yang aman, bersih, dan lengkap dengan layanan profesional. Kami memastikan pengalaman menginap yang tenang dan mudah dari proses pemesanan hingga check-out.</p>
+    </section>
+
+    <section class="contact container" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Hubungi Kami</p>
+        <h2>Pesan kamar atau tanyakan detail lebih lanjut.</h2>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>
+          Nama
+          <input type="text" name="name" placeholder="Nama lengkap" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="email@domain.com" required />
+        </label>
+        <label>
+          Pesan
+          <textarea name="message" rows="5" placeholder="Tulis pertanyaan atau permintaan Anda" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 DreamRoom. Semua hak dilindungi.</p>
+      <div class="footer-links">
+        <a href="#home">Beranda</a>
+        <a href="#rooms">Kamar</a>
+        <a href="#contact">Hubungi</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">×</button>
+      <h2>Pesan Kamar</h2>
+      <form id="bookingForm">
+        <label>
+          Nama Lengkap
+          <input type="text" name="fullName" required />
+        </label>
+        <label>
+          Kamar
+          <select name="roomType" required>
+            <option value="Standard">Standard</option>
+            <option value="Premium">Premium</option>
+            <option value="Suite Deluxe">Suite Deluxe</option>
+          </select>
+        </label>
+        <label>
+          Durasi Sewa
+          <input type="text" name="duration" placeholder="Contoh: 3 malam" required />
+        </label>
+        <button type="submit" class="btn btn-primary">Kirim Permintaan</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
